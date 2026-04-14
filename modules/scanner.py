@@ -28,7 +28,8 @@ def save_results(target, scan_data, output_base, format_choice):
     # JSON Export (For Wazuh/Automation)
     if format_choice in ['json', 'both']:
         with open(f"{filename}.json", 'w') as f:
-            json.dump({"target": target, "timestamp": timestamp, "results": scan_data}, f, indent=4)
+            json.dump({"target": target, "timestamp": timestamp, "results": scan_data}, f)
+            f.write('\n')
         print(f"\033[92m[+] JSON saved: {filename}.json\033[0m")
 
     # TXT Export (For Portfolio Documentation)
