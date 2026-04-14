@@ -14,6 +14,40 @@ GhostRunner is a professional-grade reconnaissance and vulnerability assessment 
 
 ---
 
+## 🛠️ SOC Lab Pipeline
+GhostRunner is engineered to function as a core data provider for modern security monitoring.
+
+Reconnaissance: Execute a full-scale audit of target infrastructure.
+
+Structured Output: GhostRunner generates a timestamped JSON report in the reports/ directory.
+
+SIEM Ingestion: A Wazuh Agent monitors the reports/ folder via syscheck or localfile configurations.
+
+Real-Time Alerting: Findings are parsed by the Wazuh Manager, triggering high-severity alerts on the dashboard when critical vulnerabilities are identified.
+
+---
+
+## 💻 Technical Usage
+* **Flags**
+-t, --timing: 1 (Aggressive), 2 (Standard), 3 (Polite)
+
+-o, --output: Custom filename for the generated reports.
+
+-f, --format: Choose between json, txt, or both (default).
+
+---
+
+## 🔒 Security Policy
+This tool is intended for Authorized Educational and Professional Auditing only. As a Cybersecurity student and aspiring Cloud Security Engineer, I developed this tool to demonstrate the critical role of structured logging and automation in modern vulnerability management.
+
+---
+
+Developed by: maxwelcyber
+
+Status: v2.2-PRO | Production Build
+
+---
+
 ## ⚙️ Quick Installation (One-Liner)
 
 To install GhostRunner v2.2-PRO globally on your Linux system, copy and paste the following command:
