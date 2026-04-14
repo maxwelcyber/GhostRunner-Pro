@@ -53,4 +53,4 @@ Status: v2.2-PRO | Production Build
 To install GhostRunner v2.2-PRO globally on your Linux system, copy and paste the following command:
 
 ```bash
-git clone [https://github.com/maxwelcyber/GhostRunner-Pro.git](https://github.com/maxwelcyber/GhostRunner-Pro.git) && cd GhostRunner-Pro && chmod +x setup.sh && ./setup.sh
+git clone https://github.com/maxwelcyber/GhostRunner-Pro.git && cd GhostRunner-Pro && chmod +x setup.sh && ./setup.sh
